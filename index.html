@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gireesh Yellasiri</title>
+<meta name="description" content="Gireesh Yellasiri: Ph.D. candidate in Computer Science at NIT Andhra Pradesh. Research on video understanding and latent dynamics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --text:#222; --muted:#666; --link:#1a5fb4; --line:#e6e6e6; --hl:#f4f7fb;
+  --font:'Source Sans 3','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#15181c; --text:#e4e6e8; --muted:#9aa1a8; --link:#7db3ff; --line:#2b3036; --hl:#1c2127}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 var(--font)}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.page{max-width:820px;margin:0 auto;padding:48px 24px 72px}
+
+/* header */
+.top{display:flex;gap:36px;align-items:flex-start;margin-bottom:28px}
+.top .info{flex:1}
+h1{font-size:2.3rem;font-weight:600;margin:0 0 4px;letter-spacing:-.01em;line-height:1.2}
+.sub{color:var(--muted);margin:0 0 18px}
+.top p{margin:0 0 12px}
+.links{margin-top:14px;font-size:.98rem}
+.links a+a::before{content:"/";color:var(--muted);margin:0 10px}
+
+/* photo: put photo.jpg next to index.html. Falls back to initials if missing. */
+.photo{flex:0 0 200px;width:200px;height:200px;border-radius:50%;overflow:hidden;background:var(--hl);
+  border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
+  font-size:3.4rem;font-weight:600;color:var(--muted)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0;margin-bottom:34px;
+  font-size:.97rem;z-index:5}
+nav a{margin-right:20px;color:var(--text)}
+nav a:hover{color:var(--link);text-decoration:none}
+
+h2{font-size:1.45rem;font-weight:600;margin:46px 0 14px}
+section:first-of-type h2{margin-top:0}
+.news{list-style:none;padding:0;margin:0}
+.news li{display:flex;gap:16px;padding:4px 0}
+.news time{flex:0 0 84px;color:var(--muted);font-size:.95rem}
+
+/* publications */
+.pub{padding:14px 16px;margin:0 -16px 6px;border-radius:6px}
+.pub:hover{background:var(--hl)}
+.pub .t{font-weight:600;display:block;line-height:1.35}
+.pub .a{display:block;font-size:.96rem;margin-top:2px}
+.pub .a b{text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:3px}
+.pub .v{display:block;font-size:.95rem;color:var(--muted);font-style:italic}
+.tag{font-style:normal;font-size:.78rem;font-weight:600;padding:1px 8px;border-radius:4px;margin-left:6px;border:1px solid var(--line);color:var(--muted)}
+.tag.acc{color:#b4232a;border-color:#e8b4b6}
+@media (prefers-color-scheme:dark){.tag.acc{color:#ff9aa0;border-color:#6b3438}}
+
+/* rows */
+.row{display:flex;gap:20px;padding:7px 0}
+.row .d{flex:0 0 150px;color:var(--muted);font-size:.95rem}
+.row .b b{font-weight:600}
+.row .b span{display:block;color:var(--muted);font-size:.95rem}
+ul.plain{margin:0;padding-left:20px}
+ul.plain li{margin:5px 0}
+
+footer{margin-top:60px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+
+@media(max-width:640px){
+  .top{flex-direction:column-reverse;align-items:flex-start;gap:20px}
+  .photo{width:150px;height:150px;flex-basis:150px;font-size:2.6rem}
+  .row{flex-direction:column;gap:0}
+  .row .d{flex-basis:auto}
+  nav{overflow-x:auto;white-space:nowrap}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="top">
+    <div class="info">
+      <h1>Gireesh Yellasiri</h1>
+      <p class="sub">Ph.D. Candidate, Computer Science · Assistant Professor, CSE</p>
+      <p>I am a Ph.D. candidate in Computer Science at the <a href="https://www.nitandhra.ac.in/">National Institute of Technology Andhra Pradesh</a>, and an Assistant Professor in the Department of CSE at Sri Vasavi Engineering College, Tadepalligudem.</p>
+      <p>My research is on video understanding: forecasting what happens next in a video, representing video compactly with continuous latent dynamics, and adapting video models to new domains with little or no labels. I also enjoy teaching, and I want to do interdisciplinary research that uses technology to solve real problems.</p>
+      <div class="links">
+        <a href="mailto:gireeshyellasiri@gmail.com">Email</a>
+        <a href="cv.pdf">CV</a>
+        <!-- Add your own links, for example:
+        <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a>
+        <a href="https://github.com/yourname">GitHub</a>
+        <a href="https://www.linkedin.com/in/yourname">LinkedIn</a>
+        -->
+      </div>
+    </div>
+    <div class="photo">
+      <img src="photo.jpg" alt="Portrait of Gireesh Yellasiri" onerror="this.remove();this.parentNode.textContent='GY'">
+    </div>
+  </header>
+
+  <nav aria-label="Sections">
+    <a href="#news">News</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#honors">Honors</a><a href="#service">Service</a>
+  </nav>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><time>Jun 2026</time><span>Joined Sri Vasavi Engineering College as Assistant Professor in CSE.</span></li>
+      <li><time>2026</time><span>Two papers at CVIP 2026: early video anomaly prediction, and NeRV-ODE for neural video representation.</span></li>
+      <li><time>2026</time><span>Attended the Foundation of Ethics in AI 2026 workshop at IIIT Hyderabad.</span></li>
+      <li><time>Nov 2026</time><span>Reviewing for MINDS 2026 (Nov 19 to 20).</span></li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <div class="pub">
+      <span class="t">Learning Latent Future Dynamics from Partial Observations for Early Video Anomaly Prediction</span>
+      <span class="a"><b>Gireesh Yellasiri</b>, Nagesh Bhattu S, Arun M, Sri Phani Krishna K</span>
+      <span class="v">CVIP 2026, 11th International Conference on Computer Vision and Image Processing</span>
+    </div>
+    <div class="pub">
+      <span class="t">NeRV-ODE: Neural Video Representation through Continuous Latent Dynamics</span>
+      <span class="a"><b>Gireesh Yellasiri</b>, Kaphil Kumar M, Hari Krishna T, Sreeram Vasisht M, Nagesh Bhattu S</span>
+      <span class="v">CVIP 2026, 11th International Conference on Computer Vision and Image Processing</span>
+    </div>
+    <div class="pub">
+      <span class="t">Efficient Self-Supervised Video Summarization with Latent Dynamics and Attention Alignment</span>
+      <span class="a"><b>Gireesh Yellasiri</b>, Nagesh Bhattu S, Sri Phani Krishna K</span>
+      <span class="v">Image and Vision Computing<span class="tag">Submitted</span></span>
+    </div>
+    <div class="pub">
+      <span class="t">Future Feature Generation Network for Efficient Early Video Action Prediction</span>
+      <span class="a"><b>Gireesh Yellasiri</b>, Nagesh Bhattu S, Sri Phani Krishna K</span>
+      <span class="v">Signal, Image and Video Processing<span class="tag">Submitted</span></span>
+    </div>
+    <div class="pub">
+      <span class="t">Memory-Bank Guided Contrastive Self-Training for Source-Free Unsupervised Video Domain Adaptation</span>
+      <span class="a"><b>Gireesh Yellasiri</b>, Nagesh Bhattu S, Sri Phani Krishna K</span>
+      <span class="v">Pattern Recognition and Image Analysis<span class="tag">Submitted</span></span>
+    </div>
+    <div class="pub">
+      <span class="t">A Fine-grained Anomaly Classification in Surveillance Videos by Leveraging the Graph-based Semi-Supervised Learning Approach</span>
+      <span class="a"><b>Gireesh Yellasiri</b>, Nagesh Bhattu S, Sri Phani Krishna K, Satya Krishna N</span>
+      <span class="v">Electronic Letters on Computer Vision and Image Analysis<span class="tag">Submitted</span></span>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="row"><div class="d">Jun 2026 to now</div><div class="b"><b>Assistant Professor, CSE</b><span>Sri Vasavi Engineering College, Tadepalligudem</span></div></div>
+    <div class="row"><div class="d">Nov 2022 to May 2026</div><div class="b"><b>Adhoc Faculty, CSE</b><span>National Institute of Technology Andhra Pradesh</span></div></div>
+    <div class="row"><div class="d">Feb 2022 to Nov 2022</div><div class="b"><b>Developer, “Intelligent Banking Kiosk” R&amp;D project</b><span>IDRBT, Hyderabad</span></div></div>
+    <div class="row"><div class="d">Oct 2019 to Feb 2022</div><div class="b"><b>Adhoc Faculty, CSE</b><span>National Institute of Technology Andhra Pradesh</span></div></div>
+    <div class="row"><div class="d">Jan 2019 to Oct 2019</div><div class="b"><b>Assistant Professor, CSE</b><span>Audisankara College of Engineering and Technology, Gudur</span></div></div>
+    <div class="row"><div class="d">Jun 2016 to Dec 2018</div><div class="b"><b>Assistant Professor, CSE</b><span>Sree Venkateswara College of Engineering, Nellore</span></div></div>
+    <div class="row"><div class="d">Jul 2015 to May 2016</div><div class="b"><b>Lecturer, CSE</b><span>Sree Kalahasteeswara Institute of Technology, Srikalahasthi</span></div></div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="row"><div class="d">2020 to present</div><div class="b"><b>Ph.D., Computer Science</b><span>National Institute of Technology Andhra Pradesh, Tadepalligudem</span></div></div>
+    <div class="row"><div class="d">2014</div><div class="b"><b>M.Tech, Computer Science (83.47%)</b><span>JNTU College of Engineering Anantapuram</span></div></div>
+    <div class="row"><div class="d">2011</div><div class="b"><b>B.Tech, Computer Science and Engineering (72.97%)</b><span>Narayana Engineering College (JNTUA), Gudur</span></div></div>
+    <div class="row"><div class="d">2007</div><div class="b"><b>Intermediate, M.P.C (86.2%)</b><span>S.G.V.R.M. Jr College, Gudur</span></div></div>
+    <div class="row"><div class="d">2005</div><div class="b"><b>SSC (77.00%)</b><span>Z.P.H.S, Manubolu</span></div></div>
+  </section>
+
+  <section id="honors">
+    <h2>Honors, courses and certifications</h2>
+    <ul class="plain">
+      <li>All India GATE score 402 (2012); AICTE Post Graduate Scholarship for the M.Tech program.</li>
+      <li>Qualified UGC-NET for Assistant Professor with 95.85 percentile (June 2019).</li>
+      <li>Coursera, Prof. Andrew Ng: Neural Networks and Deep Learning (97.00%); Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization (94.13%).</li>
+      <li>NPTEL: Machine Learning and Reinforcement Learning (Prof. Balaraman Ravindran); Deep Learning for Computer Vision (Prof. Vineeth N Balasubramanian).</li>
+      <li>GIAN: Technical Overview of Public and Private Blockchains, NIT Andhra Pradesh.</li>
+      <li>QUASPIR (UK): online learning workshop for faculty. Several Faculty Development Programs in Computer Science.</li>
+    </ul>
+  </section>
+
+  <section id="service">
+    <h2>Service and talks</h2>
+    <ul class="plain">
+      <li>Reviewer, MINDS 2026: International Conference on Machine Intelligence, Neuro Computing, and Decision Systems.</li>
+      <li>Reviewer, 22nd International Conference on Information Technology (OCIT 2024), SRM University-AP.</li>
+      <li>Talk: Semi-Supervised Video Anomaly Classification, Colloquium’23, NIT Andhra Pradesh (Sep 15, 2023).</li>
+    </ul>
+  </section>
+
+  <footer>© <span id="yr">2026</span> Gireesh Yellasiri · Tadepalligudem, Andhra Pradesh, India</footer>
+</div>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
